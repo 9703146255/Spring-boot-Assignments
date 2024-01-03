@@ -1,0 +1,9 @@
+IF WE WANT TO CREATE OUR OWN SEQUENCE OR CUSTOMAIZE SEQUENCE
+===========================================================
+OD1,0D2,OD3,,,,,,
+
+TCS1,TCS2,TCS3,,,, 
+
+STEP-1 : PK column type should be VARCHAR
+
+STEP-2 : ORDER ID SHOULD BE DIVIDE INTO 2-PARTS

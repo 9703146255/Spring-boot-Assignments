@@ -1,0 +1,52 @@
+package in.ashokit.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ashokit.entity.Customer;
+
+@Service
+public class CustomerServiceImpl implements ICustomerService {
+
+	
+	@Autowired
+	private CustomerServiceImpl customerService;
+
+	@Override
+	public Customer getCustomer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> getCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Customer insertCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Customer updateCustomer(Integer customerId, String customerName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteCustomer(Integer customerId) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+	
+	
+}

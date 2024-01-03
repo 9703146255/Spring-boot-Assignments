@@ -1,0 +1,30 @@
+1) Insert record into table using custom query
+
+2) Write custom query with projection
+
+3) Custom Generator using Oracle database
+
+4) Custom Generator using MySQL Database
+
+5) Insert image into table using data jpa
+
+6) Call stored procedure using data jpa
+
+7) Export DB table data to excel file
+
+		Reference : youtube.com/watch?v=qe_NrRRsuVg
+
+8) How to connect with multiple databases using springboot
+
+		Reference : youtube.com/watch?v=mIFIb_JE47U
+
+9) Develop data jpa applicatio with profiles (dev & qa)
+
+			dev profile => h2 db
+
+			qa profile => mysql db
+
+
+10) Develop data jpa application to insert emp record with addresses (one emp can have multiple addresses like present and permanent)
+
+11) Develop data jpa application to retrieve emp record along with addresses using join query based on given emp id.

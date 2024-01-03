@@ -1,0 +1,10 @@
+
+CREATE A PROCEDURES
+===================
+delimiter //
+create procedure getAllProducts()
+begin
+select * from product;
+end //
+
+call getAllProducts();

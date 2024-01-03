@@ -1,0 +1,13 @@
+package in.ashokit.service;
+
+import java.util.List;
+
+import in.ashokit.entity.Customer;
+
+public interface CustomerService {
+	
+	public Customer getCustomer();
+	public List<Customer> getCustomers();
+	public String insertEmployee(Customer customer);
+
+}

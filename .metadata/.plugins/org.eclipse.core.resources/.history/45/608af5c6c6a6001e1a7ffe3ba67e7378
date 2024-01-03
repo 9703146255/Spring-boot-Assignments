@@ -1,0 +1,55 @@
+package in.ashokit;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.ashokit.entity.Employee;
+import in.ashokit.repo.EmployeeRepo;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
+	
+		EmployeeRepo bean = run.getBean(EmployeeRepo.class);
+		
+		//assignment-1
+		Employee emp1=new Employee();
+		emp1.setEmpName("thirumalesh");
+		emp1.setEmpSal(5000.00);
+		
+		Employee emp2=new Employee();
+		emp2.setEmpName("kiran");
+		emp2.setEmpSal(6000.00);
+		
+		Employee emp3=new Employee();
+		emp3.setEmpName("charan");
+		emp3.setEmpSal(7000.00);
+		
+		List<Employee> asList = Arrays.asList(emp1,emp2,emp3);
+		
+		 bean.saveAll(asList);
+		 
+		 //assignment-2
+		 
+		 
+		 List<Object[]> empNameAndSal = bean.getEmpNameAndSal();
+		 
+		 for (Object[] objects : empNameAndSal) 
+		 {
+			for(Object obj1:objects)
+			{
+				System.out.println(obj1);
+			}
+		 }
+		
+		
+		
+	}
+
+}

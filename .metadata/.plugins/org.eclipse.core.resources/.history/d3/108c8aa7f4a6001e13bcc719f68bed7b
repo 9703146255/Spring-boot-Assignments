@@ -1,0 +1,14 @@
+package in.ashokit.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Car {
+	
+	@Id
+	private Integer id;
+	private String model;
+	private Integer year;
+
+}

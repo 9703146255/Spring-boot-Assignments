@@ -1,0 +1,9 @@
+package in.ashokit.entity;
+@Id
+public class Employee {
+
+	private String empId;
+	private String empName;
+	private Double empSal;
+
+}

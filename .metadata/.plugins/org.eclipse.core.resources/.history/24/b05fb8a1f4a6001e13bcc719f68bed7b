@@ -1,0 +1,10 @@
+package in.ashokit.entity;
+
+@Entity
+public class Car {
+	
+	private Integer id;
+	private String model;
+	private Integer year;
+
+}

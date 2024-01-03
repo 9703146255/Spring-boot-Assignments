@@ -1,0 +1,109 @@
+2024-01-03T12:05:11.768+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Starting Application using Java 17.0.7 with PID 18272 (D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1\target\classes started by hp in D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1)
+2024-01-03T12:05:11.770+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T12:05:12.000+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T12:05:12.010+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-01-03T12:05:12.115+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1111 (http)
+2024-01-03T12:05:12.116+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-03T12:05:12.116+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-03T12:05:12.141+05:30  INFO 18272 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-01-03T12:05:12.141+05:30  INFO 18272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 368 ms
+2024-01-03T12:05:12.187+05:30  INFO 18272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T12:05:12.192+05:30  INFO 18272 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T12:05:12.197+05:30  INFO 18272 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T12:05:12.198+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Starting...
+2024-01-03T12:05:12.215+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-42 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d49fa5c
+2024-01-03T12:05:12.215+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Start completed.
+2024-01-03T12:05:12.241+05:30  INFO 18272 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T12:05:12.291+05:30  INFO 18272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T12:05:12.386+05:30  WARN 18272 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T12:05:12.514+05:30  INFO 18272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-03T12:05:12.534+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1111 (http) with context path ''
+2024-01-03T12:05:12.552+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Started Application in 0.86 seconds (process running for 4766.836)
+2024-01-03T12:05:12.577+05:30  INFO 18272 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-03T12:05:36.228+05:30  INFO 18272 --- [http-nio-1111-exec-2] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-03T12:05:36.228+05:30  INFO 18272 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-03T12:05:36.230+05:30  INFO 18272 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-03T12:05:36.244+05:30  INFO 18272 --- [http-nio-1111-exec-2] in.ashokit.service.CustomerServiceImpl   :  CustomerServiceImpl :: getCustomer :: method executed..
+2024-01-03T12:05:36.254+05:30  INFO 18272 --- [http-nio-1111-exec-2] in.ashokit.service.CustomerServiceImpl   :  CustomerServiceImpl :: updateCustomer :: method executed..
+2024-01-03T12:05:36.254+05:30  INFO 18272 --- [http-nio-1111-exec-2] i.a.r.Customer2RestController            : Customer2RestController :: updateCustomer:: method executed...
+2024-01-03T12:05:53.607+05:30  INFO 18272 --- [http-nio-1111-exec-3] in.ashokit.service.CustomerServiceImpl   :  CustomerServiceImpl :: getCustomer :: method executed..
+2024-01-03T12:05:53.613+05:30  INFO 18272 --- [http-nio-1111-exec-3] in.ashokit.service.CustomerServiceImpl   :  CustomerServiceImpl :: updateCustomer :: method executed..
+2024-01-03T12:05:53.613+05:30  INFO 18272 --- [http-nio-1111-exec-3] i.a.r.Customer2RestController            : Customer2RestController :: updateCustomer:: method executed...
+2024-01-03T12:07:03.810+05:30  INFO 18272 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-01-03T12:07:03.835+05:30  INFO 18272 --- [Thread-162] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T12:07:03.836+05:30  INFO 18272 --- [Thread-162] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Shutdown initiated...
+2024-01-03T12:07:03.845+05:30  INFO 18272 --- [Thread-162] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Shutdown completed.
+2024-01-03T12:07:04.008+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Starting Application using Java 17.0.7 with PID 18272 (D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1\target\classes started by hp in D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1)
+2024-01-03T12:07:04.009+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T12:07:04.282+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T12:07:04.291+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-01-03T12:07:04.408+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1111 (http)
+2024-01-03T12:07:04.409+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-03T12:07:04.409+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-03T12:07:04.437+05:30  INFO 18272 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-01-03T12:07:04.437+05:30  INFO 18272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 425 ms
+2024-01-03T12:07:04.483+05:30  INFO 18272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T12:07:04.488+05:30  INFO 18272 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T12:07:04.493+05:30  INFO 18272 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T12:07:04.495+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Starting...
+2024-01-03T12:07:04.514+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-43 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13cb72e9
+2024-01-03T12:07:04.514+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Start completed.
+2024-01-03T12:07:04.552+05:30  INFO 18272 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T12:07:04.587+05:30  INFO 18272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T12:07:04.703+05:30  WARN 18272 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T12:07:04.857+05:30  INFO 18272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-03T12:07:04.878+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1111 (http) with context path ''
+2024-01-03T12:07:04.901+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Started Application in 0.935 seconds (process running for 4879.184)
+2024-01-03T12:07:04.924+05:30  INFO 18272 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-03T12:07:41.116+05:30  INFO 18272 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-03T12:07:41.149+05:30  INFO 18272 --- [Thread-166] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T12:07:41.151+05:30  INFO 18272 --- [Thread-166] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Shutdown initiated...
+2024-01-03T12:07:41.165+05:30  INFO 18272 --- [Thread-166] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Shutdown completed.
+2024-01-03T12:07:41.328+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Starting Application using Java 17.0.7 with PID 18272 (D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1\target\classes started by hp in D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1)
+2024-01-03T12:07:41.329+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T12:07:41.554+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T12:07:41.564+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-01-03T12:07:41.692+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1111 (http)
+2024-01-03T12:07:41.694+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-03T12:07:41.694+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-03T12:07:41.719+05:30  INFO 18272 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-01-03T12:07:41.719+05:30  INFO 18272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 386 ms
+2024-01-03T12:07:41.783+05:30  INFO 18272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T12:07:41.787+05:30  INFO 18272 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T12:07:41.792+05:30  INFO 18272 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T12:07:41.794+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Starting...
+2024-01-03T12:07:41.810+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-44 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ad29032
+2024-01-03T12:07:41.810+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Start completed.
+2024-01-03T12:07:41.835+05:30  INFO 18272 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T12:07:41.893+05:30  INFO 18272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T12:07:41.983+05:30  WARN 18272 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T12:07:42.122+05:30  INFO 18272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-03T12:07:42.151+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1111 (http) with context path ''
+2024-01-03T12:07:42.177+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Started Application in 0.887 seconds (process running for 4916.46)
+2024-01-03T12:07:42.201+05:30  INFO 18272 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-03T12:07:45.670+05:30  INFO 18272 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-03T12:07:45.709+05:30  INFO 18272 --- [Thread-170] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T12:07:45.712+05:30  INFO 18272 --- [Thread-170] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Shutdown initiated...
+2024-01-03T12:07:45.723+05:30  INFO 18272 --- [Thread-170] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Shutdown completed.
+2024-01-03T12:07:45.886+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Starting Application using Java 17.0.7 with PID 18272 (D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1\target\classes started by hp in D:\ASHOKIT\20-AllAssignments\15-RestApiCrudOperations1)
+2024-01-03T12:07:45.887+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T12:07:46.145+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T12:07:46.155+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-01-03T12:07:46.274+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1111 (http)
+2024-01-03T12:07:46.276+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-03T12:07:46.276+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-03T12:07:46.300+05:30  INFO 18272 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-01-03T12:07:46.300+05:30  INFO 18272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 410 ms
+2024-01-03T12:07:46.345+05:30  INFO 18272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T12:07:46.349+05:30  INFO 18272 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T12:07:46.354+05:30  INFO 18272 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T12:07:46.356+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Starting...
+2024-01-03T12:07:46.374+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-45 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a90db97
+2024-01-03T12:07:46.374+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Start completed.
+2024-01-03T12:07:46.400+05:30  INFO 18272 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T12:07:46.436+05:30  INFO 18272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T12:07:46.540+05:30  WARN 18272 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T12:07:46.686+05:30  INFO 18272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-03T12:07:46.706+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1111 (http) with context path ''
+2024-01-03T12:07:46.719+05:30  INFO 18272 --- [restartedMain] in.ashokit.Application                   : Started Application in 0.861 seconds (process running for 4921.002)
+2024-01-03T12:07:46.740+05:30  INFO 18272 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

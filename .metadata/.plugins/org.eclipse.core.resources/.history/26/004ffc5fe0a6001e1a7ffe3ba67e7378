@@ -1,0 +1,13 @@
+package in.ashokit.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Employee {
+    @Id
+	private String empId;
+	private String empName;
+	private Double empSal;
+
+}

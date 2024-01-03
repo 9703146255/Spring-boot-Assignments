@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;in.ashokit.entity.Products&apos; to &apos;Product&apos;&#x0D;&#x0A;- Original project: &apos;06-CallStoredProcedures&apos;&#x0D;&#x0A;- Original element: &apos;in.ashokit.entity.Products&apos;&#x0D;&#x0A;- Renamed element: &apos;in.ashokit.entity.Product&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Products&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashokit.entity{Products.java[Products" matchStrategy="1" name="Product" qualified="false" references="true" similarDeclarations="false" stamp="1703927152401" textual="false" version="1.0"/>
+</session>

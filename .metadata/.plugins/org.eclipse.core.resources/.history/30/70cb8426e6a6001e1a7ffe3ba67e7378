@@ -1,0 +1,17 @@
+package in.ashokit.service;
+
+import org.springframework.stereotype.Service;
+
+import in.ashokit.entity.Employee;
+
+@Service
+public class EmployeeService {
+	
+	public void insertData()
+	{
+		Employee emp1=new Employee();
+		emp1.setEmpName("thirumala");
+		emp1.setEmpName(4000.00);
+	}
+
+}

@@ -1,0 +1,52 @@
+package in.ashokit.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Customer {
+	
+	private Integer customerId;
+	private String cutomerName;
+	private String customerEmail;
+	
+	public Integer getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(Integer customerId) {
+		this.customerId = customerId;
+	}
+	public String getCutomerName() {
+		return cutomerName;
+	}
+	public void setCutomerName(String cutomerName) {
+		this.cutomerName = cutomerName;
+	}
+	public String getCustomerEmail() {
+		return customerEmail;
+	}
+	public void setCustomerEmail(String customerEmail) {
+		this.customerEmail = customerEmail;
+	}
+	@Override
+	public String toString() {
+		return "Customer [customerId=" + customerId + ", cutomerName=" + cutomerName + ", customerEmail="
+				+ customerEmail + "]";
+	}
+	/**
+	 * @param customerId
+	 * @param cutomerName
+	 * @param customerEmail
+	 */
+	public Customer(Integer customerId, String cutomerName, String customerEmail) {
+		this.customerId = customerId;
+		this.cutomerName = cutomerName;
+		this.customerEmail = customerEmail;
+	}
+	public Customer() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+
+}

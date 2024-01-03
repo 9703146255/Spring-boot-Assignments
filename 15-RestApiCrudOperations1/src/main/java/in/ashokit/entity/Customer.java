@@ -1,0 +1,62 @@
+package in.ashokit.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Customer {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer customerId;
+	private String cutomerName;
+	private String customerEmail;
+
+	public Integer getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(Integer customerId) {
+		this.customerId = customerId;
+	}
+
+	public String getCutomerName() {
+		return cutomerName;
+	}
+
+	public void setCutomerName(String cutomerName) {
+		this.cutomerName = cutomerName;
+	}
+
+	public String getCustomerEmail() {
+		return customerEmail;
+	}
+
+	public void setCustomerEmail(String customerEmail) {
+		this.customerEmail = customerEmail;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customerId=" + customerId + ", cutomerName=" + cutomerName + ", customerEmail="
+				+ customerEmail + "]";
+	}
+
+	/**
+	 * @param customerId
+	 * @param cutomerName
+	 * @param customerEmail
+	 */
+	public Customer(String cutomerName, String customerEmail) {
+
+		this.cutomerName = cutomerName;
+		this.customerEmail = customerEmail;
+	}
+
+	public Customer() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

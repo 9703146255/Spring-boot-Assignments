@@ -1,0 +1,12 @@
+package in.ashokit.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Customer {
+	
+	private Integer customerId;
+	private String cutomerName;
+	private String customerEmail;
+
+}

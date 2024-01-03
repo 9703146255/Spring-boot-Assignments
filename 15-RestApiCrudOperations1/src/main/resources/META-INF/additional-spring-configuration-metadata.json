@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "looggin.level.root",
+  "type": "java.lang.String",
+  "description": "A description for 'looggin.level.root'"
+}]}

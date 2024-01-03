@@ -1,0 +1,5 @@
+package in.ashokit.restcontroller;
+
+public class CustomerRestController {
+
+}

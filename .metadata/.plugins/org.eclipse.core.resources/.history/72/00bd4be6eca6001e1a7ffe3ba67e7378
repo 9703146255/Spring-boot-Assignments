@@ -1,0 +1,14 @@
+package in.ashokit.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Product {
+
+	@Id
+	private Integer productId;
+	private  String productName;
+	private Double productPrice;
+	
+	
+}

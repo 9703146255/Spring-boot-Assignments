@@ -1,0 +1,38 @@
+package in.ashokit.generator;
+
+import java.io.Serializable;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.hibernate.engine.spi.SharedSessionContractImplementor;
+import org.hibernate.id.IdentifierGenerator;
+
+public class EmployeeIdGenerator implements IdentifierGenerator{
+
+	@Override
+	public Serializable generate(SharedSessionContractImplementor session, Object object) {
+	
+		String prefix="TCS";
+		String suffix="";
+		
+		String sql="select emp_id_seq.nextVal from dual";
+		try(Connection obtainConnection = session.getJdbcConnectionAccess().obtainConnection()) 
+		{
+			Statement createStatement = obtainConnection.createStatement();
+			
+			ResultSet executeQuery = createStatement.executeQuery(sql);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		return prefix+suffix;
+	}
+
+}

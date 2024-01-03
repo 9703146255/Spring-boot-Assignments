@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    password: 123456
+    url: jdbc:mysql://localhost:3306/assignments
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+server:
+  port: 1111

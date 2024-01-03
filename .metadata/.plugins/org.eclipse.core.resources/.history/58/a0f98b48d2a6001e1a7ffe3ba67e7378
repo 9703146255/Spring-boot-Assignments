@@ -1,0 +1,53 @@
+package in.ashokit.generator;
+
+import java.io.Serializable;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.hibernate.engine.spi.SharedSessionContractImplementor;
+import org.hibernate.id.IdentifierGenerator;
+//in.ashokit.generator.EmployeeIdGenerator
+public class EmployeeIdGenerator implements IdentifierGenerator {
+
+	@Override
+	public Serializable generate(SharedSessionContractImplementor session, Object object) {
+		
+		
+		String sequenceName = "emp_id_seq";  
+		String sql="INSERT INTO custom_sequence (sequence_name) VALUES ('order_id_seq')";
+		try(Connection obtainConnection = session.getJdbcConnectionAccess().obtainConnection()) 
+		{
+			try(PreparedStatement pstatement = obtainConnection.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS))
+			{
+					pstatement.setString(1, sequenceName);
+					int count = pstatement.executeUpdate();
+					System.out.println("no of rows effected"+count);
+			
+					try (ResultSet generatedKeys = pstatement.getGeneratedKeys())
+					{
+						if(generatedKeys.next())
+						{
+							long lastInsertedId = generatedKeys.getLong(1);
+				
+							return "TCS"+String.format("%06d", lastInsertedId);
+						}
+					}
+			}
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return null;
+		
+		
+	}
+
+}

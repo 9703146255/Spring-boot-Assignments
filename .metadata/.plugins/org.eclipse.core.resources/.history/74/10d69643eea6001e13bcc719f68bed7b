@@ -1,0 +1,27 @@
+package in.ashokit.service;
+
+import java.io.File;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ashokit.entity.Product;
+import in.ashokit.repo.ProductRepo;
+
+@Service
+public class ProductService {
+	
+	@Autowired
+	private ProductRepo pRepo;
+	
+	public void insertImage()
+	{
+		
+		File f=new File("D:\\ASHOKIT\\20-AllAssignments\\05-InsertImageIntoTable\\src\\main\\java\\1.png");
+		
+		
+		
+		Product p=new Product();
+	}
+
+}

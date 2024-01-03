@@ -1,0 +1,5 @@
+package in.ashokit.service;
+@Sevice
+public class EmployeeService {
+
+}

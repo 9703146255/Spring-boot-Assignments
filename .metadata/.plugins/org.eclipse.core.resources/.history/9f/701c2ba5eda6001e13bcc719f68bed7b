@@ -1,0 +1,12 @@
+package in.ashokit.service;
+
+import org.springframework.stereotype.Service;
+
+import in.ashokit.repo.ProductRepo;
+
+@Service
+public class ProductService {
+	
+	private ProductRepo pRepo;
+
+}

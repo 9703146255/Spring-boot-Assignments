@@ -1,0 +1,56 @@
+package in.ashokit.restcontroller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.entity.Customer;
+import in.ashokit.service.CustomerServiceImpl;
+
+@RestController
+public class CustomerRestController {
+	
+	@Autowired
+	private CustomerServiceImpl customerService;
+	
+	@GetMapping(value = "/customer/{customerId}")
+	public Customer getCustomer(@PathVariable Integer customerId) {
+		
+		Customer customer = customerService.getCustomer(customerId);
+		return customer;
+	}
+
+	public List<Customer> getCustomers() {
+		List<Customer> customers = customerService.getCustomers();
+		
+		return customers;
+	}
+
+
+	public Customer insertCustomer(Customer customer) {
+		
+		Customer insertCustomer = customerService.insertCustomer(customer);
+	
+		return insertCustomer;
+	}
+
+	
+	public Customer updateCustomer(Integer customerId, String customerName) {
+	
+		Customer updateCustomer = customerService.updateCustomer(customerId, customerName);
+		return updateCustomer;
+	}
+
+	
+	public void deleteCustomer(Integer customerId) {
+
+		customerService.deleteCustomer(customerId);
+		
+	}
+	
+	
+
+}
